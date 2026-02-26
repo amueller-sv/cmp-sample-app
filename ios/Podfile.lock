@@ -1,0 +1,30 @@
+PODS:
+  - cm-sdk-ios-v3 (3.8.0)
+  - cm_cmp_sdk_v3 (3.8.0):
+    - cm-sdk-ios-v3 (= 3.8.0)
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - cm-sdk-ios-v3 (= 3.8.0)
+  - cm_cmp_sdk_v3 (from `.symlinks/plugins/cm_cmp_sdk_v3/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - cm-sdk-ios-v3
+
+EXTERNAL SOURCES:
+  cm_cmp_sdk_v3:
+    :path: ".symlinks/plugins/cm_cmp_sdk_v3/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  cm-sdk-ios-v3: 62d1b6b9a014efe15a00f7f267750b5b9becd515
+  cm_cmp_sdk_v3: 8e0497dfba6b833cbe2ac69aed7f731f9fe62993
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+
+PODFILE CHECKSUM: c109b2def20a2322cf69664be781ffd0e8b5a208
+
+COCOAPODS: 1.16.2
