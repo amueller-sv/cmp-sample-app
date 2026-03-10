@@ -1,4 +1,5 @@
 import 'package:cm_cmp_sdk_v3/cm_cmp_sdk_v3.dart';
+import 'package:cm_cmp_sdk_v3/consent_layer_ui_config.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -43,6 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
         appName: 'sz',
         language: 'DE',
       );
+
+      await _cmpManager.setWebViewConfig(ConsentLayerUIConfig(isCancelable: false, darkMode: true));
 
       _cmpManager.addEventListeners(
         didReceiveConsent: (consent, jsonObject) {
