@@ -38,14 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _initializeCMP() async {
     try {
+      await _cmpManager.setWebViewConfig(ConsentLayerUIConfig(isCancelable: false, darkMode: true));
+
       await _cmpManager.setUrlConfig(
         id: 'd43fec52024dd',
         domain: 'delivery.consentmanager.net',
         appName: 'sz',
         language: 'DE',
       );
-
-      await _cmpManager.setWebViewConfig(ConsentLayerUIConfig(isCancelable: false, darkMode: true));
 
       _cmpManager.addEventListeners(
         didReceiveConsent: (consent, jsonObject) {
